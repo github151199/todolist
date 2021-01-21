@@ -1,0 +1,12 @@
+<li *ngFor="let task of toDoList" class="list-item row">
+  <span class="col s10">{{task.name}}</span>
+  <span class="col s10">{{task.date | date:'fullDate'}}</span>
+  <div class="col s2 right-align">
+    <button (click)="removeTask(task)" class="btn-floating btn-small red">
+      <i class="material-icons">remove</i>
+    </button>
+    <button (click)="taskDone(task)" class="btn-floating btn-small green ml-5">
+      <i class="material-icons">check</i>
+    </button>
+  </div>
+</li>

@@ -1,0 +1,4 @@
+<li *ngFor="let task of doneTasks" class="collection-item row">
+  <span class="col done">{{task.name}}</span>
+  <span class="col done">{{task.date | date:'fullDate'}}</span>
+</li>
